@@ -1,0 +1,285 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Noto Sans Thai", sans-serif;
+    background-color: #f1f7ed;
+    margin: 0;
+    color: #3f5f43;
+}
+
+
+/* =========================
+   เมนู
+========================= */
+
+nav {
+    background-color: white;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+#menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    color: #4f7d50;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 10px;
+}
+
+nav a:hover {
+    color: #e5a84b;
+}
+
+
+/* ปุ่มสามขีด */
+
+.menu-button {
+    display: none;
+    width: auto;
+    padding: 10px 18px;
+    margin: 0 auto;
+    background-color: #79a878;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/* =========================
+   หน้าแรก
+========================= */
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fffdf5;
+    border-radius: 0 0 25px 25px;
+}
+
+header h1 {
+    color: #4f7d50;
+    font-size: 32px;
+}
+
+header p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* รูปอาหาร */
+
+.food-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+
+/* กล่องเกี่ยวกับเว็บไซต์ */
+
+.about-box {
+    max-width: 650px;
+    margin: 30px auto 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+
+/* =========================
+   เนื้อหา
+========================= */
+
+main {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+section h2 {
+    color: #4f7d50;
+    margin-top: 0;
+}
+
+section p {
+    line-height: 1.7;
+}
+
+
+/* =========================
+   แบบคำถาม
+========================= */
+
+.question {
+    background-color: #f8fbf6;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    border-left: 5px solid #79a878;
+}
+
+.question h3 {
+    margin-top: 0;
+}
+
+.question label {
+    display: block;
+    background-color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.question label:hover {
+    background-color: #fff8df;
+}
+
+.question input {
+    margin-right: 8px;
+}
+
+.question input:checked {
+    accent-color: #79a878;
+}
+
+
+/* =========================
+   ปุ่ม
+========================= */
+
+button {
+    font-family: inherit;
+}
+
+.result-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #79a878;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.result-button:hover {
+    background-color: #628e61;
+}
+
+
+/* =========================
+   ผลการประเมิน
+========================= */
+
+#result {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff8df;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    background-color: #fffdf5;
+    padding: 30px 20px;
+    margin-top: 30px;
+    text-align: center;
+    border-top: 1px solid #e5eadf;
+}
+
+footer p {
+    max-width: 700px;
+    margin: auto;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   มือถือ
+========================= */
+
+@media (max-width: 600px) {
+
+    .menu-button {
+        display: block;
+    }
+
+    #menu-list {
+        display: none;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    #menu-list.show {
+        display: flex;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 8px;
+    }
+
+    header {
+        padding: 35px 15px;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}

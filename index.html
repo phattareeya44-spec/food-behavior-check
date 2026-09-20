@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>เช็คพฤติกรรมการกินของฉัน</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- เมนู -->
+    <nav>
+
+        <button class="menu-button" onclick="toggleMenu()">☰</button>
+
+        <div id="menu-list">
+            <a href="#home">หน้าแรก</a>
+            <a href="#portion">ควบคุมปริมาณ</a>
+            <a href="#protein">โปรตีน</a>
+            <a href="#carb">คาร์โบไฮเดรต</a>
+            <a href="#sweet">ของหวาน</a>
+            <a href="#menu">เมนูตัวอย่าง</a>
+            <a href="#test">แบบประเมิน</a>
+        </div>
+
+    </nav>
+
+
+    <!-- หน้าแรก -->
+    <header id="home">
+
+        <h1>🥗 เช็คพฤติกรรมการกินของฉัน</h1>
+
+        <img
+            src="https://images.unsplash.com/photo-1540420773420-3366772f4999"
+            alt="สลัดผัก"
+            class="food-image"
+        >
+
+        <p>
+            เลือกกินอาหารให้หลากหลาย และสร้างสมดุลในแต่ละมื้อ
+        </p>
+
+        <p>
+            สุขภาพดีไม่ได้เกิดจากการอดอาหาร
+            แต่เกิดจากการกินอย่างสมดุลและทำได้อย่างต่อเนื่อง
+        </p>
+
+        <div class="about-box">
+
+            <h2>💚 เกี่ยวกับเว็บไซต์</h2>
+
+            <p>
+                เว็บไซต์นี้จัดทำขึ้นเพื่อช่วยให้ผู้ใช้สำรวจ
+                พฤติกรรมการกินของตนเองในชีวิตประจำวัน
+                และเรียนรู้แนวทางการกินอาหารอย่างสมดุล
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- ควบคุมปริมาณ -->
+        <section id="portion">
+
+            <h2>🍽️ ควบคุมปริมาณ</h2>
+
+            <p>
+                เลือกกินอาหารในปริมาณที่เหมาะสมกับความต้องการของร่างกาย
+                และกินอาหารให้หลากหลาย
+            </p>
+
+        </section>
+
+
+        <!-- โปรตีน -->
+        <section id="protein">
+
+            <h2>🥚 โปรตีน</h2>
+
+            <p>
+                เลือกแหล่งโปรตีน เช่น ไข่ ปลา เนื้อสัตว์ เต้าหู้
+                และถั่วต่าง ๆ
+            </p>
+
+        </section>
+
+
+        <!-- คาร์โบไฮเดรต -->
+        <section id="carb">
+
+            <h2>🍚 คาร์โบไฮเดรต</h2>
+
+            <p>
+                เลือกข้าว แป้ง หรือธัญพืชให้เหมาะสม
+                และรับประทานอาหารให้หลากหลาย
+            </p>
+
+        </section>
+
+
+        <!-- ของหวาน -->
+        <section id="sweet">
+
+            <h2>🍰 ของหวาน</h2>
+
+            <p>
+                สามารถรับประทานของหวานได้ในปริมาณที่เหมาะสม
+                และไม่จำเป็นต้องงดอาหารที่ชอบทั้งหมด
+            </p>
+
+        </section>
+
+
+        <!-- เมนูตัวอย่าง -->
+        <section id="menu">
+
+            <h2>🥗 เมนูตัวอย่าง</h2>
+
+            <p>ข้าว + ปลา + ผัก + ผลไม้</p>
+
+            <p>ข้าว + ไข่ + ผัก + ผลไม้</p>
+
+        </section>
+
+
+        <!-- แบบประเมิน -->
+        <section id="test">
+
+            <h2>📝 แบบประเมินพฤติกรรมการกิน</h2>
+
+
+            <div class="question">
+
+                <h3>1. วันนี้ฉันกินผักหรือไม่?</h3>
+
+                <label>
+                    <input type="radio" name="q1" value="2">
+                    กิน
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="1">
+                    กินบ้าง
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="0">
+                    ไม่ได้กิน
+                </label>
+
+            </div>
+
+
+            <div class="question">
+
+                <h3>2. ฉันมีแหล่งโปรตีนในมื้ออาหารหรือไม่?</h3>
+
+                <label>
+                    <input type="radio" name="q2" value="2">
+                    มี
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="1">
+                    มีบางมื้อ
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="0">
+                    ไม่มี
+                </label>
+
+            </div>
+
+
+            <div class="question">
+
+                <h3>3. ฉันกินเครื่องดื่มที่มีน้ำตาลบ่อยแค่ไหน?</h3>
+
+                <label>
+                    <input type="radio" name="q3" value="2">
+                    น้อย
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="1">
+                    บางครั้ง
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="0">
+                    บ่อย
+                </label>
+
+            </div>
+
+
+            <div class="question">
+
+                <h3>4. ฉันกินอาหารในปริมาณที่เหมาะสมหรือไม่?</h3>
+
+                <label>
+                    <input type="radio" name="q4" value="2">
+                    เหมาะสม
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="1">
+                    บางครั้ง
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="0">
+                    ยังไม่ค่อยเหมาะสม
+                </label>
+
+            </div>
+
+
+            <div class="question">
+
+                <h3>5. ฉันกินอาหารหลากหลายหรือไม่?</h3>
+
+                <label>
+                    <input type="radio" name="q5" value="2">
+                    หลากหลาย
+                </label>
+
+                <label>
+                    <input type="radio" name="q5" value="1">
+                    ปานกลาง
+                </label>
+
+                <label>
+                    <input type="radio" name="q5" value="0">
+                    ไม่ค่อยหลากหลาย
+                </label>
+
+            </div>
+
+
+            <button class="result-button" onclick="checkResult()">
+                ดูผลการประเมิน
+            </button>
+
+
+            <div id="result"></div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            ข้อมูลในเว็บไซต์นี้จัดทำขึ้นเพื่อให้ความรู้ด้านโภชนาการทั่วไป
+            ไม่ใช่คำแนะนำทางการแพทย์เฉพาะบุคคล
+            ผู้ที่มีโรคประจำตัว มีภาวะโภชนาการผิดปกติ
+            หรือต้องการควบคุมน้ำหนักอย่างเฉพาะเจาะจง
+            ควรปรึกษานักกำหนดอาหารหรือบุคลากรทางการแพทย์
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
